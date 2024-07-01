@@ -1,4 +1,4 @@
-# application.yml
+# application.yml. *Make Rate Limit Configurable*,**Spring Cloud Config**:- Use Spring Cloud Config to make rate limit settings configurable and dynamic.
 rate-limiter:
   max-requests: 100
   window-size: 60

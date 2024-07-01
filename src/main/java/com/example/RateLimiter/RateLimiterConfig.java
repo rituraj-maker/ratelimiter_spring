@@ -2,7 +2,8 @@ package com.example.RateLimiter;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
-
+//Define Rate Limiter Configuration .
+//Create a configuration class to hold rate limiting parameters.
 @Configuration
 @ConfigurationProperties(prefix = "rate-limiter")
 class RateLimiterConfig {

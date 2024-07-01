@@ -8,12 +8,13 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-
+//Rate Limiter Interceptor.
+//Implement an interceptor to check rate limits before processing the request. 
 
 @Component
 class RateLimiterInterceptor implements HandlerInterceptor {
     @Autowired
-    private RateLimiterService rateLimiterService;
+    private RateLimiterService rateLimiterService;  // service autowired
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {

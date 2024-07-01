@@ -5,7 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
-
+//Create Rate Limiter Service
+//- Implement a service to handle rate limiting logic using Redis.
 
 @Service
 class RateLimiterService {
@@ -14,6 +15,7 @@ class RateLimiterService {
     @Autowired
     private RateLimiterConfig config;
 
+    // method to  check RateLimited constraint( request count & window size parameter) implemented or not 
     public boolean isRateLimited(String clientId) {
         String key = "rate:limit:" + clientId;
         long currentTime = System.currentTimeMillis() / 1000;

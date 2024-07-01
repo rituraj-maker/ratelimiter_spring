@@ -5,6 +5,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+
+// Register Interceptor.
+ //Add the interceptor to the Spring Boot application.
+
+
 @Configuration
 class WebConfig implements WebMvcConfigurer {
     @Autowired
