@@ -1,3 +1,0 @@
-spring.cloud.config.enabled=false
-rate-limiter.max-requests=100
-rate-limiter.window-size=60

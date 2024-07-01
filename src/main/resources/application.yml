@@ -3,5 +3,7 @@ rate-limiter:
   max-requests: 100
   window-size: 60
   # application.yml
-spring.cloud.config:
-    enabled: false
+spring:
+    cloud:
+        config:
+            enabled: false
